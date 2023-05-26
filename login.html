@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+  </head>
+  <body>
+    <section
+      class="flex flex-col lg:flex-row gap-10 lg:p-10 h-screen bg-[#F5F6FA]"
+    >
+      <div
+        class="bg-[#201645] w-full lg:rounded-2xl p-4 lg:p-9 flex relative flex-col justify-center items-start lg:before:content-[''] lg:before:bg-[url('./img/bg-login.svg')] before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:bg-no-repeat before:bg-contain"
+      >
+        <img
+          class="w-[160px] lg:w-fit mt-10 lg:mt-0 lg:mb-10"
+          src="./img/logo.svg"
+          alt=""
+        />
+        <h2
+          class="w-9/12 text-white text-4xl pb-8 font-semibold hidden lg:block"
+        >
+          <span class="text-[#0075C9]">Lorem Ipsum is simply</span> dummy text
+          of the printing and typesetting
+        </h2>
+        <p class="w-9/12 text-white hidden lg:block">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div
+        class="h-full bg-[#F5F6FA] w-full rounded-2xl p-4 lg:p-9 flex flex-col lg:justify-center items-center relative"
+      >
+        <div class="flex flex-col items-start w-full lg:w-[392px]">
+          <h3 class="text-[#201645] text-3xl lg:text-4xl pb-7 font-semibold">
+            Inicia sesión en tu cuenta
+          </h3>
+          <form class="w-full" action="">
+            <div class="flex flex-col w-full mb-16">
+              <label class="text-[#201645] text-sm pb-2" for=""
+                >Correo electrónico</label
+              >
+              <input
+                class="text-[#201645] rounded-md h-10 border border-[#E0E1E4] w-full outline-none px-3"
+                type="text"
+              />
+            </div>
+            <button
+              disabled
+              class="w-full h-[50px] bg-[#0075C9] rounded-md text-white font-semibold disabled:bg-[#7BB5E1]"
+            >
+              OBTENER PIN
+            </button>
+          </form>
+        </div>
+        <div class="absolute bottom-5 text-center">
+          <p class="text-[#B3B3B3] font-light">
+            Sistema realizado por <span class="font-medium">SUFACTURA</span>
+          </p>
+          <p class="text-[#B3B3B3] font-light">© 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

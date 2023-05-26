@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+  </head>
+  <body>
+    <section class="flex flex-col lg:flex-row gap-10 h-screen bg-[#F5F6FA]">
+      <div
+        class="absolute lg:relative bg-[#201645] rounded-r-3xl h-screen min-w-fit lg:min-w-[250px] p-4 z-10"
+      >
+        <img
+          class="h-[26px] my-5 hidden lg:block"
+          src="./img/logo.svg"
+          alt=""
+        />
+        <img
+          class="h-[26px] my-5 lg:hidden mx-auto"
+          src="./img/iso.svg"
+          alt=""
+        />
+        <nav class="mt-10">
+          <div class="mb-10">
+            <p class="hidden lg:block text-white font-semibold pb-2">
+              Comprador
+            </p>
+            <a
+              class="flex items-center gap-3 bg-[#2B224E] p-2 lg:p-3 text-white rounded-md"
+              href=""
+            >
+              <i class="text-3xl lg:text-base iconoir-home-alt"></i>
+              <span class="hidden lg:block">Inicio</span>
+            </a>
+          </div>
+          <div class="mb-10">
+            <p class="hidden lg:block text-white font-semibold pb-2">Modulos</p>
+            <a
+              class="flex items-center gap-3 bg-transparent p-2 lg:p-3 text-white rounded-md"
+              href=""
+            >
+              <i class="text-3xl lg:text-base iconoir-archive"></i>
+              <span class="hidden lg:block">Facturas</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="h-screen w-full">
+        <header class="flex items-center justify-end gap-4 lg:gap-10 p-4">
+          <button
+            class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full relative"
+          >
+            <i class="iconoir-bell text-[#0075C9] text-xl"></i>
+            <span
+              class="bg-[#0075C9] w-[10px] h-[10px] absolute top-0 right-0 rounded-full"
+            ></span>
+          </button>
+          <div class="cursor-pointer flex items-center gap-4">
+            <span
+              class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full"
+            >
+              <i class="iconoir-user text-[#201645] text-xl"></i>
+            </span>
+            <div class="text-[#201645] hidden lg:block">
+              <span class="text-sm leading-none">Bienvenido</span>
+              <p class="font-semibold leading-none">Jesus Maria Andra...</p>
+            </div>
+            <i class="hidden lg:block iconoir-nav-arrow-down text-[#201645] text-2xl"></i>
+          </div>
+        </header>
+        <div class="p-4 lg:p-0">
+          <div class="flex justify-between lg:justify-start items-center gap-5 mb-3">
+            <h2 class="text-xl lg:text-3xl font-semibold">Panel principal</h2>
+            <button
+              class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full"
+            >
+              <i class="iconoir-refresh text-[#0075C9] lg:text-xl"></i>
+            </button>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="iconoir-check-circle text-[#7AD978] text-2xl"></i>
+            <p class="text-[#626262] font-semibold text-xs lg:text-base">
+              Actualizado el 11 MAY 2023
+            </p>
+            <p class="text-[#626262] font-semibold text-xs lg:text-base">04:02am</p>
+          </div>
+        </div>
+        <div class="flex gap-5 lg:mt-10 h-[calc(100vh-250px)] p-4 lg:pr-4 lg:py-0 lg:pl-0">
+          <div class="flex flex-col gap-5 w-full lg:w-8/12">
+            <div class="bg-white p-4 rounded-md h-full">
+              <div
+                class="flex items-center justify-between border-b-2 border-b-[#F5F6FA] pb-3 relative before:content-[''] before:w-[51px] before:h-[6px] before:bg-[#F5F6FA] before:rounded-full before:absolute before:bottom-[-4px]"
+              >
+                <h3 class="text-[#201645] text-base lg:text-lg font-bold">
+                  NUEVAS FACTURAS
+                </h3>
+                <a
+                  class="text-[#0075C9] text-sm lg:text-base font-medium flex items-center gap-1"
+                  href=""
+                >
+                  <span>Ver todas</span>
+                  <i class="text-2xl iconoir-nav-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="bg-white p-4 rounded-md h-full">
+              <div
+                class="flex items-center justify-between border-b-2 border-b-[#F5F6FA] pb-3 relative before:content-[''] before:w-[51px] before:h-[6px] before:bg-[#F5F6FA] before:rounded-full before:absolute before:bottom-[-4px]"
+              >
+                <h3 class="text-[#201645] text-base lg:text-lg font-bold">
+                  FACTURAS COMPRADAS
+                </h3>
+                <a
+                  class="text-[#0075C9] font-medium text-sm lg:text-base flex items-center gap-1"
+                  href=""
+                >
+                  <span>Ver todas</span>
+                  <i class="text-2xl iconoir-nav-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:block bg-white py-4 pl-4 rounded-md w-4/12">
+            <div
+              class="flex items-center justify-between border-b-2 border-b-[#F5F6FA] pb-3 relative before:content-[''] before:w-[51px] before:h-[6px] before:bg-[#F5F6FA] before:rounded-full before:absolute before:bottom-[-4px] mr-4"
+            >
+              <h3 class="text-[#201645] text-lg font-bold">
+                ACTIVIDAD RECIENTE
+              </h3>
+            </div>
+            <div class="overflow-auto h-[calc(100%-63px)] mt-5 pr-4">
+              <div class="flex gap-3 pb-7">
+                <div class="flex justify-center items-center flex-col">
+                  <span class="bg-[#F5F6FA] flex items-center justify-center rounded-full min-w-[20px] min-h-[20px]">  
+                    <span class="w-[6px] h-[6px] bg-[#0075C9] rounded-full"></span>
+                  </span>
+                  <span class="w-[2px] bg-[#F5F6FA] h-full rounded-full"></span>
+                </div>
+                <p class="text-[#201645] text-sm pr-5 leading-6"><span class="font-semibold">Jesus Maria Andrade</span> compro 4 facturas de <span class="font-semibold">Carvajal Pulpa y Papel SA</span> con una tasa del <span class="font-semibold">14.50%.</span></p>
+                <p class="text-[#C4C4C4] text-sm">10min</p>
+              </div>
+              <div class="flex gap-3 pb-7">
+                <div class="flex justify-center items-center flex-col">
+                  <span class="bg-[#F5F6FA] flex items-center justify-center rounded-full min-w-[20px] min-h-[20px]">  
+                    <span class="w-[6px] h-[6px] bg-[#0075C9] rounded-full"></span>
+                  </span>
+                  <span class="w-[2px] bg-[#F5F6FA] h-full rounded-full"></span>
+                </div>
+                <p class="text-[#201645] text-sm pr-5 leading-6"><span class="font-semibold">Jesus Maria Andrade</span> compro 4 facturas de <span class="font-semibold">Carvajal Pulpa y Papel SA</span> con una tasa del <span class="font-semibold">14.50%.</span></p>
+                <p class="text-[#C4C4C4] text-sm">10min</p>
+              </div>
+              <div class="flex gap-3 pb-7">
+                <div class="flex justify-center items-center flex-col">
+                  <span class="bg-[#F5F6FA] flex items-center justify-center rounded-full min-w-[20px] min-h-[20px]">  
+                    <span class="w-[6px] h-[6px] bg-[#0075C9] rounded-full"></span>
+                  </span>
+                  <span class="w-[2px] bg-[#F5F6FA] h-full rounded-full"></span>
+                </div>
+                <p class="text-[#201645] text-sm pr-5 leading-6"><span class="font-semibold">Jesus Maria Andrade</span> compro 4 facturas de <span class="font-semibold">Carvajal Pulpa y Papel SA</span> con una tasa del <span class="font-semibold">14.50%.</span></p>
+                <p class="text-[#C4C4C4] text-sm">10min</p>
+              </div>
+              <div class="flex gap-3 pb-7">
+                <div class="flex justify-center items-center flex-col">
+                  <span class="bg-[#F5F6FA] flex items-center justify-center rounded-full min-w-[20px] min-h-[20px]">  
+                    <span class="w-[6px] h-[6px] bg-[#0075C9] rounded-full"></span>
+                  </span>
+                  <span class="w-[2px] bg-[#F5F6FA] h-full rounded-full"></span>
+                </div>
+                <p class="text-[#201645] text-sm pr-5 leading-6"><span class="font-semibold">Jesus Maria Andrade</span> compro 4 facturas de <span class="font-semibold">Carvajal Pulpa y Papel SA</span> con una tasa del <span class="font-semibold">14.50%.</span></p>
+                <p class="text-[#C4C4C4] text-sm">10min</p>
+              </div>
+              <div class="flex gap-3 pb-7">
+                <div class="flex justify-center items-center flex-col">
+                  <span class="bg-[#F5F6FA] flex items-center justify-center rounded-full min-w-[20px] min-h-[20px]">  
+                    <span class="w-[6px] h-[6px] bg-[#0075C9] rounded-full"></span>
+                  </span>
+                  <span class="w-[2px] bg-[#F5F6FA] h-full rounded-full"></span>
+                </div>
+                <p class="text-[#201645] text-sm pr-5 leading-6"><span class="font-semibold">Jesus Maria Andrade</span> compro 4 facturas de <span class="font-semibold">Carvajal Pulpa y Papel SA</span> con una tasa del <span class="font-semibold">14.50%.</span></p>
+                <p class="text-[#C4C4C4] text-sm">10min</p>
+              </div>
+              <div class="flex gap-3 pb-7">
+                <div class="flex justify-center items-center flex-col">
+                  <span class="bg-[#F5F6FA] flex items-center justify-center rounded-full min-w-[20px] min-h-[20px]">  
+                    <span class="w-[6px] h-[6px] bg-[#0075C9] rounded-full"></span>
+                  </span>
+                  <span class="w-[2px] bg-[#F5F6FA] h-full rounded-full"></span>
+                </div>
+                <p class="text-[#201645] text-sm pr-5 leading-6"><span class="font-semibold">Jesus Maria Andrade</span> compro 4 facturas de <span class="font-semibold">Carvajal Pulpa y Papel SA</span> con una tasa del <span class="font-semibold">14.50%.</span></p>
+                <p class="text-[#C4C4C4] text-sm">10min</p>
+              </div>
+              <div class="flex gap-3 pb-7">
+                <div class="flex justify-center items-center flex-col">
+                  <span class="bg-[#F5F6FA] flex items-center justify-center rounded-full min-w-[20px] min-h-[20px]">  
+                    <span class="w-[6px] h-[6px] bg-[#0075C9] rounded-full"></span>
+                  </span>
+                  <span class="w-[2px] bg-[#F5F6FA] h-full rounded-full"></span>
+                </div>
+                <p class="text-[#201645] text-sm pr-5 leading-6"><span class="font-semibold">Jesus Maria Andrade</span> compro 4 facturas de <span class="font-semibold">Carvajal Pulpa y Papel SA</span> con una tasa del <span class="font-semibold">14.50%.</span></p>
+                <p class="text-[#C4C4C4] text-sm">10min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

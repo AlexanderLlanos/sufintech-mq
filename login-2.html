@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+  </head>
+  <body>
+    <section
+      class="flex flex-col lg:flex-row gap-10 lg:p-10 h-screen bg-[#F5F6FA]"
+    >
+      <div
+        class="bg-[#201645] w-full lg:rounded-2xl p-4 lg:p-9 flex relative flex-col justify-center items-start lg:before:content-[''] lg:before:bg-[url('./img/bg-login.svg')] before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:bg-no-repeat before:bg-contain"
+      >
+        <img
+          class="w-[160px] lg:w-fit mt-10 lg:mt-0 lg:mb-10"
+          src="./img/logo.svg"
+          alt=""
+        />
+        <h2
+          class="w-9/12 text-white text-4xl pb-8 font-semibold hidden lg:block"
+        >
+          <span class="text-[#0075C9]">Lorem Ipsum is simply</span> dummy text
+          of the printing and typesetting
+        </h2>
+        <p class="w-9/12 text-white hidden lg:block">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+      <div
+        class="h-full bg-[#F5F6FA] w-full rounded-2xl p-4 lg:p-9 flex flex-col lg:justify-center items-center relative"
+      >
+        <div class="flex flex-col items-start w-full lg:w-[392px]">
+          <h3 class="text-[#201645] text-3xl lg:text-4xl pb-7 font-semibold">
+            Inicia sesión en tu cuenta
+          </h3>
+          <div class="flex justify-between items-center bg-white border border-[#201645] w-full p-3 rounded-md mb-6">
+            <div class="flex items-center gap-3">
+              <span class="bg-[#F5F6FA] w-[39px] h-[39px] flex items-center justify-center rounded-full">
+                <i class="iconoir-user text-2xl text-[#201645]"></i>
+              </span>
+              <div>
+                <span class="text-sm text-[#626262] leading-none">Bienvenido!</span>
+                <p class="text-[#201645] leading-none">test@gmail.com</p>
+              </div>
+            </div>
+            <i class="iconoir-cancel text-2xl text-[#201645] cursor-pointer"></i>
+          </div>
+          <form class="w-full" action="">
+            <div class="flex flex-col w-full mb-16">
+              <label class="text-[#201645] text-sm pb-2" for=""
+                >PIN</label
+              >
+              <input
+                class="text-[#201645] rounded-md h-10 border border-[#E0E1E4] w-full outline-none px-3"
+                type="text"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <button
+                disabled
+                class="w-full h-[50px] bg-[#0075C9] rounded-md text-white font-semibold disabled:bg-[#7BB5E1]"
+              >
+                INGRESAR
+              </button>
+              <button
+                class="w-full h-[50px] bg-transparent rounded-md text-[#0075C9] font-semibold"
+              >
+                CANCELAR
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="absolute bottom-5 text-center">
+          <p class="text-[#B3B3B3] font-light">
+            Sistema realizado por <span class="font-medium">SUFACTURA</span>
+          </p>
+          <p class="text-[#B3B3B3] font-light">© 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="absolute w-11/12 md:w-[580px] gap-5 flex justify-between items-center top-10 right-4 md:right-10 border border-[#7AD978] p-4 bg-[#F2F8F4] rounded-md">
+        <div class="flex items-center gap-5">
+          <span class="bg-[#7AD978] shadow-[0_4px_10px_0px_rgba(122,217,120,0.5)] min-w-[46px] min-h-[46px] flex items-center justify-center rounded-full">
+            <i class="iconoir-check-circle text-2xl text-white"></i>
+          </span>
+          <div>
+            <span class="text-xl font-semibold text-[#201645] leading-none">Felicidades!</span>
+            <p class="text-sm text-[#201645] leading-none">Hemos enviado un PIN de 6 caracteres a tu correo electrónico, utilízalo para ingresar a tu cuenta</p>
+          </div>
+        </div>
+        <i class="iconoir-cancel text-2xl text-[#201645] cursor-pointer"></i>
+      </div>
+      <div class="absolute w-11/12 md:w-[580px] gap-5 flex justify-between items-center top-10 right-4 md:right-10 border border-[#E9635E] p-4 bg-[#F8F0EB] rounded-md">
+        <div class="flex items-center gap-5">
+          <span class="bg-[#E9635E] shadow-[0_4px_10px_0px_rgba(233,99,94,0.5)] min-w-[46px] min-h-[46px] flex items-center justify-center rounded-full">
+            <i class="iconoir-check-circle text-2xl text-white"></i>
+          </span>
+          <div>
+            <span class="text-xl font-semibold text-[#201645] leading-none">Algo salió mal!</span>
+            <p class="text-sm text-[#201645] leading-none">Lo sentimos, el usuario no existe.</p>
+          </div>
+        </div>
+        <i class="iconoir-cancel text-2xl text-[#201645] cursor-pointer"></i>
+      </div>
+    </section>
+  </body>
+</html>
