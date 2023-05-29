@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+  </head>
+  <body>
+    <section class="flex flex-col lg:flex-row gap-10 h-screen bg-[#F5F6FA]">
+      <div
+        class="absolute lg:relative bg-[#201645] rounded-r-3xl h-screen min-w-fit lg:min-w-[250px] p-4 z-10"
+      >
+        <img
+          class="h-[26px] my-5 hidden lg:block"
+          src="./img/logo.svg"
+          alt=""
+        />
+        <img
+          class="h-[26px] my-5 lg:hidden mx-auto"
+          src="./img/iso.svg"
+          alt=""
+        />
+        <nav class="mt-10">
+          <div class="mb-10">
+            <p class="hidden lg:block text-white font-semibold pb-2">
+              Comprador
+            </p>
+            <a
+              class="flex items-center gap-3 bg-transparent p-2 lg:p-3 text-white rounded-md"
+              href="./c-home.html"
+            >
+              <i class="text-3xl lg:text-base iconoir-home-alt"></i>
+              <span class="hidden lg:block">Inicio</span>
+            </a>
+          </div>
+          <div class="mb-10">
+            <p class="hidden lg:block text-white font-semibold pb-2">Modulos</p>
+            <a
+              class="flex items-center gap-3 bg-[#2B224E] p-2 lg:p-3 text-white rounded-md"
+              href="./c-facturas.html"
+            >
+              <i class="text-3xl lg:text-base iconoir-archive"></i>
+              <span class="hidden lg:block">Facturas</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="h-screen w-full">
+        <header class="flex items-center justify-end gap-4 lg:gap-10 p-4">
+          <button
+            class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full relative"
+          >
+            <i class="iconoir-bell text-[#0075C9] text-xl"></i>
+            <span
+              class="bg-[#0075C9] w-[10px] h-[10px] absolute top-0 right-0 rounded-full"
+            ></span>
+          </button>
+          <div class="cursor-pointer flex items-center gap-4">
+            <span
+              class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full"
+            >
+              <i class="iconoir-user text-[#201645] text-xl"></i>
+            </span>
+            <div class="text-[#201645] hidden lg:block">
+              <span class="text-sm leading-none">Bienvenido</span>
+              <p class="font-semibold leading-none">Jesus Maria Andra...</p>
+            </div>
+            <i class="hidden lg:block iconoir-nav-arrow-down text-[#201645] text-2xl"></i>
+          </div>
+        </header>
+        <div class="p-4 lg:p-0">
+          <div class="flex justify-between lg:justify-start items-center gap-5 mb-3">
+            <h2 class="text-xl lg:text-3xl font-semibold">Facturas</h2>
+            <button
+              class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full"
+            >
+              <i class="iconoir-refresh text-[#0075C9] lg:text-xl"></i>
+            </button>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="iconoir-check-circle text-[#7AD978] text-2xl"></i>
+            <p class="text-[#626262] font-semibold text-xs lg:text-base">
+              Actualizado el 11 MAY 2023
+            </p>
+            <p class="text-[#626262] font-semibold text-xs lg:text-base">04:02am</p>
+          </div>
+        </div>
+        <div class="lg:mt-10 h-[calc(100vh-200px)] lg:h-[calc(100vh-250px)] p-4 lg:pr-4 lg:py-0 lg:pl-0">
+          <div class="flex gap-1 items-center justify-start border-b-2 border-b-[#201645]">
+            <div class="cursor-pointer h-[80px] flex flex-col items-start justify-center px-5 rounded-t-lg bg-[#201645] text-white w-full lg:w-fit lg:min-w-[230px]">
+              <span class="text-3xl font-light leading-none">03</span>
+              <p class="font-semibold">OFERTAS</p>
+            </div>
+            <div class="cursor-pointer h-[80px] flex flex-col items-start justify-center px-5 rounded-t-lg bg-white text-[#201645] w-full lg:w-fit lg:min-w-[230px]">
+              <span class="text-3xl font-light leading-none">00</span>
+              <p class="font-semibold">COMPRADAS</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-b-lg p-1 mt-1 h-[calc(100vh-300px)] lg:h-[calc(100vh-350px)] overflow-auto">
+            <!-- header -->
+            <div class="hidden lg:flex items-center bg-[#F5F6FA] h-[50px] rounded-md">
+              <div class="min-w-[20%]">
+                <p class="px-4 text-[#201645] font-semibold">VENDEDOR</p>
+              </div>
+              <div class="min-w-[15%] text-end">
+                <p class="px-4 text-[#201645] font-semibold">VALOR PRESENTE</p>
+              </div>
+              <div class="min-w-[15%] text-end">
+                <p class="px-4 text-[#201645] font-semibold">VALOR FUTURO</p>
+              </div>
+              <div class="min-w-[8%] text-end">
+                <p class="px-4 text-[#201645] font-semibold">TASA</p>
+              </div>
+              <div class="min-w-[17%] text-end">
+                <p class="px-4 text-[#201645] font-semibold">FECHA OPERACIÓN</p>
+              </div>
+              <div class="min-w-[15%] text-end">
+                <p class="px-4 text-[#201645] font-semibold">NRO FACTURAS</p>
+              </div>
+              <div class="min-w-[10%]">
+              </div>
+            </div>
+            <!-- body -->
+            <div class="bg-[#F8FAFC] rounded-md lg:rounded-none py-4 lg:py-0 lg:bg-transparent lg:border-b lg:border-b-[#F8FAFC] mb-3 lg:mb-0">
+              <div class="flex items-center flex-col lg:flex-row lg:h-[60px] cursor-pointer">
+                <div class="min-w-full pb-2 lg:pb-0 lg:min-w-[20%] flex items-center justify-between">
+                  <p class="px-4 text-[#201645] font-semibold lg:font-normal">Carvajal Pulpa y Papel SA</p>
+                  <div class="lg:hidden mx-4 bg-white w-[32px] h-[32px] flex items-center justify-center rounded-full">
+                    <i class="iconoir-nav-arrow-down text-xl text-[#201645]"></i>
+                  </div>
+                </div>
+                <div class="min-w-full lg:min-w-[15%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Valor presente</span>
+                  <p class="px-4 text-[#201645]">$8,323,234</p>
+                </div>
+                <div class="min-w-full lg:min-w-[15%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Valor futuro</span>
+                  <p class="px-4 text-[#201645]">$8,523,234</p>
+                </div>
+                <div class="min-w-full lg:min-w-[8%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Tasa</span>
+                  <p class="px-4 text-[#201645]">14.50%</p>
+                </div>
+                <div class="min-w-full lg:min-w-[17%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Fecha operación</span>
+                  <p class="px-4 text-[#201645]">2023-04-25</p>
+                </div>
+                <div class="min-w-full lg:min-w-[15%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Nro. facturas</span>
+                  <p class="px-4 text-[#201645]">02</p>
+                </div>
+                <div class="min-w-full lg:min-w-[10%] hidden lg:flex justify-end px-4">
+                  <div class="bg-[#F8FAFC] w-[32px] h-[32px] flex items-center justify-center rounded-full">
+                    <i class="iconoir-nav-arrow-down text-xl text-[#201645]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#F8FAFC] rounded-md py-4 lg:py-0 lg:border-b lg:border-b-[#F8FAFC] mb-3 lg:mb-0">
+              <div class="flex items-center flex-col lg:flex-row lg:h-[60px] cursor-pointer">
+                <div class="min-w-full pb-2 lg:pb-0 lg:min-w-[20%] flex items-center justify-between">
+                  <p class="px-4 text-[#201645] font-semibold lg:font-normal">Carvajal Pulpa y Papel SA</p>
+                  <div class="lg:hidden mx-4 bg-white w-[32px] h-[32px] flex items-center justify-center rounded-full">
+                    <i class="iconoir-nav-arrow-up text-xl text-[#201645]"></i>
+                  </div>
+                </div>
+                <div class="min-w-full lg:min-w-[15%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Valor presente</span>
+                  <p class="px-4 text-[#201645]">$8,323,234</p>
+                </div>
+                <div class="min-w-full lg:min-w-[15%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Valor futuro</span>
+                  <p class="px-4 text-[#201645]">$8,523,234</p>
+                </div>
+                <div class="min-w-full lg:min-w-[8%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Tasa</span>
+                  <p class="px-4 text-[#201645]">14.50%</p>
+                </div>
+                <div class="min-w-full lg:min-w-[17%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Fecha operación</span>
+                  <p class="px-4 text-[#201645]">2023-04-25</p>
+                </div>
+                <div class="min-w-full lg:min-w-[15%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Nro. facturas</span>
+                  <p class="px-4 text-[#201645]">02</p>
+                </div>
+                <div class="min-w-full lg:min-w-[10%] hidden lg:flex justify-end px-4">
+                  <div class="bg-white w-[32px] h-[32px] flex items-center justify-center rounded-full">
+                    <i class="iconoir-nav-arrow-up text-xl text-[#201645]"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white lg:bg-transparent px-4 mx-4 rounded-md lg:rounded-none mt-3 lg:mt-0 lg:px-0 py-4 lg:border-t lg:border-t-[#EAEAEA]">
+                <p class="font-semibold text-sm lg:pb-3">DETALLE DE FACTURAS</p>
+                <div class="hidden lg:flex items-center h-[50px] border-b borderb-[#EAEAEA]">
+                  <div class="min-w-[10%]">
+                    <p class="text-[#201645] text-sm font-medium">Pagador</p>
+                  </div>
+                  <div class="min-w-[12%] text-end">
+                    <p class="text-[#201645] text-sm font-medium">Fecha esperada</p>
+                  </div>
+                  <div class="min-w-[10%] text-end">
+                    <p class="text-[#201645] text-sm font-medium">Fecha final</p>
+                  </div>
+                  <div class="min-w-[14%] text-end">
+                    <p class="text-[#201645] text-sm font-medium">Factura</p>
+                  </div>
+                  <div class="min-w-[10%] text-end">
+                    <p class="text-[#201645] text-sm font-medium">Tasa</p>
+                  </div>
+                  <div class="min-w-[12%] text-end">
+                    <p class="text-[#201645] text-sm font-medium">Días operación</p>
+                  </div>
+                  <div class="min-w-[12%] text-end">
+                    <p class="text-[#201645] text-sm font-medium">Valor presente</p>
+                  </div>
+                  <div class="min-w-[10%] text-end">
+                    <p class="text-[#201645] text-sm font-medium">Valor futuro</p>
+                  </div>
+                  <div class="min-w-[10%] flex justify-end px-4">
+                  </div>
+                </div>
+                <div class="flex items-center flex-col lg:flex-row lg:h-[50px] border-b borderb-[#EAEAEA] mt-3 lg:mt-0">
+                  <div class="min-w-full lg:min-w-[10%] flex items-center justify-between lg:justify-start">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Pagador</span>
+                    <p class="text-[#201645] text-sm">PROCAPS SA</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[12%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Fecha esperada</span>
+                    <p class="text-[#201645] text-sm">2023-07-04</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[10%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Fecha final</span>
+                    <p class="text-[#201645] text-sm">2023-07-04</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[14%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Factura</span>
+                    <p class="text-[#201645] text-sm">11FO-1000001/04</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[10%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Tasa</span>
+                    <p class="text-[#201645] text-sm">14.50% E.A.</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[12%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Días operación</span>
+                    <p class="text-[#201645] text-sm">77</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[12%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Valor presente</span>
+                    <p class="text-[#201645] text-sm">$7,234,234</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[10%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Valor futuro</span>
+                    <p class="text-[#201645] text-sm">$7,234,234</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[10%] py-3 mt-2 flex justify-center lg:justify-end px-4 lg:py-0 lg:mt-0 border-t border-t-[#EAEAEA] lg:border-none">
+                    <a class="text-[#0075C9] underline text-sm" href="">Ver factura</a>
+                  </div>
+                </div>
+                <div class="flex items-center flex-col lg:flex-row lg:h-[50px] border-b borderb-[#EAEAEA] mt-3 lg:mt-0">
+                  <div class="min-w-full lg:min-w-[10%] flex items-center justify-between lg:justify-start">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Pagador</span>
+                    <p class="text-[#201645] text-sm">PROCAPS SA</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[12%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Fecha esperada</span>
+                    <p class="text-[#201645] text-sm">2023-07-04</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[10%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Fecha final</span>
+                    <p class="text-[#201645] text-sm">2023-07-04</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[14%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Factura</span>
+                    <p class="text-[#201645] text-sm">11FO-1000001/04</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[10%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Tasa</span>
+                    <p class="text-[#201645] text-sm">14.50% E.A.</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[12%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Días operación</span>
+                    <p class="text-[#201645] text-sm">77</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[12%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Valor presente</span>
+                    <p class="text-[#201645] text-sm">$7,234,234</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[10%] flex items-center justify-between lg:justify-end">
+                    <span class="lg:hidden text-sm text-[#201645] font-semibold">Valor futuro</span>
+                    <p class="text-[#201645] text-sm">$7,234,234</p>
+                  </div>
+                  <div class="min-w-full lg:min-w-[10%] py-3 mt-2 flex justify-center lg:justify-end px-4 lg:py-0 lg:mt-0 border-t border-t-[#EAEAEA] lg:border-none">
+                    <a class="text-[#0075C9] underline text-sm" href="">Ver factura</a>
+                  </div>
+                </div>
+                <div class="flex lg:justify-end mt-4">
+                  <a href="./c-factura-pasos.html" class="bg-[#0075C9] min-w-full lg:min-w-[200px] rounded-md text-white flex items-center justify-center h-[30px]"><span class="font-semibold">Comprar factura</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#F8FAFC] rounded-md lg:rounded-none py-4 lg:py-0 lg:bg-transparent lg:border-b lg:border-b-[#F8FAFC] mb-3 lg:mb-0">
+              <div class="flex items-center flex-col lg:flex-row lg:h-[60px] cursor-pointer">
+                <div class="min-w-full pb-2 lg:pb-0 lg:min-w-[20%] flex items-center justify-between">
+                  <p class="px-4 text-[#201645] font-semibold lg:font-normal">Carvajal Pulpa y Papel SA</p>
+                  <div class="lg:hidden mx-4 bg-white w-[32px] h-[32px] flex items-center justify-center rounded-full">
+                    <i class="iconoir-nav-arrow-down text-xl text-[#201645]"></i>
+                  </div>
+                </div>
+                <div class="min-w-full lg:min-w-[15%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Valor presente</span>
+                  <p class="px-4 text-[#201645]">$8,323,234</p>
+                </div>
+                <div class="min-w-full lg:min-w-[15%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Valor futuro</span>
+                  <p class="px-4 text-[#201645]">$8,523,234</p>
+                </div>
+                <div class="min-w-full lg:min-w-[8%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Tasa</span>
+                  <p class="px-4 text-[#201645]">14.50%</p>
+                </div>
+                <div class="min-w-full lg:min-w-[17%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Fecha operación</span>
+                  <p class="px-4 text-[#201645]">2023-04-25</p>
+                </div>
+                <div class="min-w-full lg:min-w-[15%] flex items-center justify-between lg:justify-end">
+                  <span class="lg:hidden px-4 text-[#201645] font-semibold">Nro. facturas</span>
+                  <p class="px-4 text-[#201645]">02</p>
+                </div>
+                <div class="min-w-full lg:min-w-[10%] hidden lg:flex justify-end px-4">
+                  <div class="bg-[#F8FAFC] w-[32px] h-[32px] flex items-center justify-center rounded-full">
+                    <i class="iconoir-nav-arrow-down text-xl text-[#201645]"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+  </head>
+  <body>
+    <section class="flex flex-col lg:flex-row gap-10 h-screen bg-[#F5F6FA]">
+      <div
+        class="absolute lg:relative bg-[#201645] rounded-r-3xl h-screen min-w-fit lg:min-w-[250px] p-4 z-10"
+      >
+        <img
+          class="h-[26px] my-5 hidden lg:block"
+          src="./img/logo.svg"
+          alt=""
+        />
+        <img
+          class="h-[26px] my-5 lg:hidden mx-auto"
+          src="./img/iso.svg"
+          alt=""
+        />
+        <nav class="mt-10">
+          <div class="mb-10">
+            <p class="hidden lg:block text-white font-semibold pb-2">
+              Comprador
+            </p>
+            <a
+              class="flex items-center gap-3 bg-transparent p-2 lg:p-3 text-white rounded-md"
+              href="./c-home.html"
+            >
+              <i class="text-3xl lg:text-base iconoir-home-alt"></i>
+              <span class="hidden lg:block">Inicio</span>
+            </a>
+          </div>
+          <div class="mb-10">
+            <p class="hidden lg:block text-white font-semibold pb-2">Modulos</p>
+            <a
+              class="flex items-center gap-3 bg-[#2B224E] p-2 lg:p-3 text-white rounded-md"
+              href="./c-facturas.html"
+            >
+              <i class="text-3xl lg:text-base iconoir-archive"></i>
+              <span class="hidden lg:block">Facturas</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="relative h-screen w-full">
+        <header class="flex items-center justify-end gap-4 lg:gap-10 p-4">
+          <button
+            class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full relative"
+          >
+            <i class="iconoir-bell text-[#0075C9] text-xl"></i>
+            <span
+              class="bg-[#0075C9] w-[10px] h-[10px] absolute top-0 right-0 rounded-full"
+            ></span>
+          </button>
+          <div class="cursor-pointer flex items-center gap-4">
+            <span
+              class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full"
+            >
+              <i class="iconoir-user text-[#201645] text-xl"></i>
+            </span>
+            <div class="text-[#201645] hidden lg:block">
+              <span class="text-sm leading-none">Bienvenido</span>
+              <p class="font-semibold leading-none">Jesus Maria Andra...</p>
+            </div>
+            <i class="hidden lg:block iconoir-nav-arrow-down text-[#201645] text-2xl"></i>
+          </div>
+        </header>
+        <div class="p-4 lg:p-0">
+          <div class="flex items-center gap-5">
+            <a class="text-sm flex items-center gap-2 text-[#0075C9]" href="./c-facturas.html">
+              <span>Facturas</span>
+              <i class="iconoir-nav-arrow-right"></i>
+            </a>
+            <p class="text-sm text-[#201645]">Factura Carvajal Pulpa y Papel SA</p>
+          </div>
+          <div class="flex items-center lg:justify-center gap-3 lg:gap-10 mt-10">
+            <div class="w-[30px] lg:w-[38px] h-[30px] lg:h-[38px] flex items-center justify-center bg-[#7AD978] text-white rounded-full text-base lg:text-2xl">
+              <i class="iconoir-check-circle"></i>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-[30px] lg:w-[38px] h-[30px] lg:h-[38px] flex items-center justify-center bg-[#201645] text-white rounded-full text-sm lg:text-xl">
+                <span>2</span>
+              </div>
+              <p class="text-sm lg:text-xl font-semibold text-[#201645]">Contrato de Lorem Ipsum</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-[30px] lg:w-[38px] h-[30px] lg:h-[38px] flex items-center justify-center bg-[#F8FAFC] text-[#626262] rounded-full text-sm lg:text-xl">
+                <span>3</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-[30px] lg:w-[38px] h-[30px] lg:h-[38px] flex items-center justify-center bg-[#F8FAFC] text-[#626262] rounded-full text-sm lg:text-xl">
+                <span>4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:mt-10 flex flex-col items-center justify-start h-[calc(100vh-300px)] lg:h-[calc(100vh-350px)] p-4 lg:pr-4 lg:py-0 lg:pl-0">
+          <div class="bg-white w-full h-screen"></div>
+          <div class="p-4">
+            <label class="text-[#0075C9] font-semibold">
+              <input type="checkbox" class="accent-[#0075C9]" checked> ACEPTAR DOCUMENTO
+            </label>
+          </div>
+        </div>
+        <div class="absolute bottom-0 w-full flex items-center lg:justify-center">
+          <div class="bg-white flex items-center justify-center h-[90px] rounded-t-lg min-w-full px-4 lg:px-0 lg:min-w-[60%] gap-5">
+            <button class="w-full lg:w-[200px] h-[50px] bg-transparent rounded-md text-[#0075C9] font-semibold">ATRAS</button>
+            <button class="w-full lg:w-[200px] h-[50px] bg-[#0075C9] rounded-md text-white font-semibold disabled:bg-[#7BB5E1]">FINALIZAR</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
