@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+  </head>
+  <body>
+    <section class="flex flex-col lg:flex-row gap-10 h-screen bg-[#F5F6FA]">
+      <div
+        class="absolute lg:relative bg-[#201645] rounded-r-3xl h-screen min-w-fit lg:min-w-[250px] p-4 z-10"
+      >
+        <img
+          class="h-[26px] my-5 hidden lg:block"
+          src="./img/logo.svg"
+          alt=""
+        />
+        <img
+          class="h-[26px] my-5 lg:hidden mx-auto"
+          src="./img/iso.svg"
+          alt=""
+        />
+        <nav class="mt-10">
+          <div class="mb-10">
+            <p class="hidden lg:block text-white font-semibold pb-2">
+              Vendedor
+            </p>
+            <a
+              class="flex items-center gap-3 bg-[#2B224E] p-2 lg:p-3 text-white rounded-md"
+              href="./c-ofertas.html"
+            >
+              <i class="text-3xl lg:text-base iconoir-home-alt"></i>
+              <span class="hidden lg:block">Ofertas</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="relative h-screen w-full">
+        <header class="flex items-center justify-end gap-4 lg:gap-10 p-4">
+          <button
+            class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full relative"
+          >
+            <i class="iconoir-bell text-[#0075C9] text-xl"></i>
+            <span
+              class="bg-[#0075C9] w-[10px] h-[10px] absolute top-0 right-0 rounded-full"
+            ></span>
+          </button>
+          <div class="cursor-pointer flex items-center gap-4">
+            <span
+              class="bg-white w-[39px] h-[39px] flex items-center justify-center rounded-full"
+            >
+              <i class="iconoir-user text-[#201645] text-xl"></i>
+            </span>
+            <div class="text-[#201645] hidden lg:block">
+              <span class="text-sm leading-none">Bienvenido</span>
+              <p class="font-semibold leading-none">Jesus Maria Andra...</p>
+            </div>
+            <i class="hidden lg:block iconoir-nav-arrow-down text-[#201645] text-2xl"></i>
+          </div>
+        </header>
+        <div class="p-4 lg:p-0">
+          <div class="flex items-center gap-5">
+            <a class="text-sm flex items-center gap-2 text-[#0075C9]" href="./c-ofertas.html">
+              <span>Ofertas</span>
+              <i class="iconoir-nav-arrow-right"></i>
+            </a>
+            <p class="text-sm text-[#201645]">Factura Carvajal Pulpa y Papel SA</p>
+          </div>
+          <div class="lg:pr-4">
+            <div class="flex justify-between items-center gap-5 mb-3 mt-3">
+              <h2 class="text-xl lg:text-3xl font-semibold">Crear nueva oferta</h2>
+            </div>
+          </div>
+          <div class="flex items-center lg:justify-center gap-3 lg:gap-10 mt-2 lg:mt-5">
+            <div class="w-[30px] lg:w-[38px] h-[30px] lg:h-[38px] flex items-center justify-center bg-[#7AD978] text-white rounded-full text-base lg:text-2xl">
+              <i class="iconoir-check-circle"></i>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-[30px] lg:w-[38px] h-[30px] lg:h-[38px] flex items-center justify-center bg-[#201645] text-white rounded-full text-sm lg:text-xl">
+                <span>2</span>
+              </div>
+              <p class="text-sm lg:text-xl font-semibold text-[#201645]">Agregar facturas</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:mt-5 flex flex-col items-center justify-start p-4 lg:pr-4 lg:py-0 lg:pl-0">
+          <div class="bg-white w-full rounded-xl p-4">
+            <div class="flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
+              <div class="flex flex-col md:flex-row lg:items-center md:gap-5">
+                <p class="text-[#201645] font-semibold">BHTEN</p>
+                <p class="text-[#201645]"><span class="font-semibold">Pagador:</span> 805019490 - SUFACTURA SA</p>
+                <p class="text-[#201645]"><span class="font-semibold">Fecha:</span> 2023-03-04</p>
+              </div>
+              <div class="flex items-center justify-between gap-2 mb-2 lg:mb-2">
+                <p class="text-[#201645] pr-5">$0.00</p>
+                <div class="flex items-center justify-between gap-2">
+                  <div class="min-w-[25px] min-h-[25px] flex items-center justify-center bg-[#7AD978] rounded-md">
+                    <span class="text-white text-sm">0</span>
+                  </div>
+                  <div class="min-w-[25px] min-h-[25px] flex items-center justify-center bg-[#E9635E] rounded-md">
+                    <span class="text-white text-sm">0</span>
+                  </div>
+                  <div class="min-w-[25px] min-h-[25px] flex items-center justify-center bg-[#201645] rounded-md">
+                    <span class="text-white text-sm">0</span>
+                  </div>
+                  <div class="min-w-[25px] min-h-[25px] flex items-center justify-center bg-[#626262] rounded-md">
+                    <span class="text-white text-sm">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-5 md:my-10 hidden">
+              <label for="dropzone-file" class="cursor-pointer flex w-full justify-center gap-4 items-center rounded-xl border border-dashed border-[#E0E1E4] bg-white p-6 text-center">
+              <i class="iconoir-archive text-[#0075C9] text-3xl"></i>
+              <h2 class="font-medium text-[#0075C9]">AGREGAR FACTURA</h2>
+              <input id="dropzone-file" type="file" class="hidden" />
+            </div>
+            <div class="border-t border-t-[#F5F6FA] mt-2 pt-4">
+              <div class="flex">
+                <div class="w-full max-h-[calc(100vh-350px)] lg:h-[calc(100vh-420px)] overflow-auto">
+                  <div class="border border-[#E9635E] p-3 rounded-md flex items-start gap-3 mb-3">
+                    <div class="pt-2">
+                      <label class="text-[#0075C9] font-semibold">
+                        <input type="checkbox" class="accent-[#0075C9]">
+                      </label>
+                    </div>
+                    <div class="w-full pt-2">
+                      <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                          <i class="iconoir-archive text-[#201645]"></i>
+                          <p class="text-[#201645] font-medium">1FO-102345 456456_OPT_F_1FO123213.pdf</p>
+                        </div>
+                        <button>
+                          <i class="iconoir-trash text-xl text-[#201645]"></i>
+                        </button>
+                      </div>
+                      <div class="bg-[#F8F0EB] py-2 px-3 rounded-md my-2">
+                        <p class="text-[#E9635E] text-sm">El pagador de la factura no coincide con el relacionado en el formulario y la factura debe eliminarse de la oferta</p>
+                      </div>
+                      <div class="grid grid-cols-3 gap-1">
+                        <p class="text-[#201645] text-sm"><span class="font-medium">CUFE:</span> Ee12313213213213v321h312321h3f1232</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Emisor:</span> 890301960 - Carvajal Pulpa y Papel S.A</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Receptor:</span> 890301960 - Fabriofolder S.A.S.</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Factura:</span> 1FO - 1231241243</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Emitida:</span> 0000 - 00 - 00</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Vence:</span> 0000 - 00 - 00</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Valor Bruto:</span> $150,499.760</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">IVA:</span> $150,499.760</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Valor Total:</span> $150,499.760</p>
+                      </div>
+                    </div>
+                    <div class="bg-[#F5F6FA] w-[32px] h-[32px] flex items-center justify-center rounded-full">
+                      <i class="iconoir-nav-arrow-up text-xl text-[#201645]"></i>
+                    </div>
+                  </div>
+                  <div class="border border-[#E9635E] p-3 rounded-md flex items-start gap-3 mb-3">
+                    <div class="pt-2">
+                      <label class="text-[#0075C9] font-semibold">
+                        <input type="checkbox" class="accent-[#0075C9]">
+                      </label>
+                    </div>
+                    <div class="w-full pt-2">
+                      <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                          <i class="iconoir-archive text-[#201645]"></i>
+                          <p class="text-[#201645] font-medium">1FO-102345 456456_OPT_F_1FO123213.pdf</p>
+                        </div>
+                        <button>
+                          <i class="iconoir-trash text-xl text-[#201645]"></i>
+                        </button>
+                      </div>
+                      <div class="bg-[#F8F0EB] py-2 px-3 rounded-md my-2">
+                        <p class="text-[#E9635E] text-sm">El pagador de la factura no coincide con el relacionado en el formulario y la factura debe eliminarse de la oferta</p>
+                      </div>
+                      <div class="grid grid-cols-3 gap-1 hidden">
+                        <p class="text-[#201645] text-sm"><span class="font-medium">CUFE:</span> Ee12313213213213v321h312321h3f1232</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Emisor:</span> 890301960 - Carvajal Pulpa y Papel S.A</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Receptor:</span> 890301960 - Fabriofolder S.A.S.</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Factura:</span> 1FO - 1231241243</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Emitida:</span> 0000 - 00 - 00</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Vence:</span> 0000 - 00 - 00</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Valor Bruto:</span> $150,499.760</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">IVA:</span> $150,499.760</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Valor Total:</span> $150,499.760</p>
+                      </div>
+                    </div>
+                    <div class="bg-[#F5F6FA] w-[32px] h-[32px] flex items-center justify-center rounded-full">
+                      <i class="iconoir-nav-arrow-down text-xl text-[#201645]"></i>
+                    </div>
+                  </div>
+                  <div class="border border-[#626262] p-3 rounded-md flex items-start gap-3 mb-3">
+                    <div class="pt-2">
+                      <label class="text-[#0075C9] font-semibold">
+                        <input type="checkbox" class="accent-[#0075C9]">
+                      </label>
+                    </div>
+                    <div class="w-full pt-2">
+                      <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                          <i class="iconoir-archive text-[#201645]"></i>
+                          <p class="text-[#201645] font-medium">1FO-102345 456456_OPT_F_1FO123213.pdf</p>
+                        </div>
+                        <button>
+                          <i class="iconoir-trash text-xl text-[#201645]"></i>
+                        </button>
+                      </div>
+                      <div class="bg-[#E7E7E7] py-2 px-3 rounded-md my-2">
+                        <p class="text-[#626262] text-sm">El CUFE no se extraer de la factura</p>
+                      </div>
+                      <div>
+                        <div class="flex flex-col w-5/12">
+                          <div class="text-[#201645] pl-3 rounded-md h-10 border border-[#E0E1E4] w-full flex items-center">
+                            <input placeholder="Ingrese el CUFE correcto" class="w-full outline-none text-sm placeholder:text-[#201645]" type="text">
+                            <button class="min-h-[30px] min-w-[30px] flex items-center justify-center bg-[#0075C9] text-white rounded-md mr-1">
+                              <i class="iconoir-arrow-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border border-[#201645] p-3 rounded-md flex items-start gap-3 mb-3">
+                    <div class="pt-2">
+                      <label class="text-[#0075C9] font-semibold">
+                        <input type="checkbox" class="accent-[#0075C9]">
+                      </label>
+                    </div>
+                    <div class="w-full pt-2">
+                      <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                          <i class="iconoir-archive text-[#201645]"></i>
+                          <p class="text-[#201645] font-medium">1FO-102345 456456_OPT_F_1FO123213.pdf</p>
+                        </div>
+                        <button>
+                          <i class="iconoir-trash text-xl text-[#201645]"></i>
+                        </button>
+                      </div>
+                      <div class="grid grid-cols-3 gap-1 my-2 border-b border-b-[#F5F6FA] pb-3">
+                        <p class="text-[#201645] text-sm"><span class="font-medium">CUFE:</span> Ee12313213213213v321h312321h3f1232</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Emisor:</span> 890301960 - Carvajal Pulpa y Papel S.A</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Receptor:</span> 890301960 - Fabriofolder S.A.S.</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Factura:</span> 1FO - 1231241243</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Emitida:</span> 0000 - 00 - 00</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Vence:</span> 0000 - 00 - 00</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Valor Bruto:</span> $150,499.760</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">IVA:</span> $150,499.760</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Valor Total:</span> $150,499.760</p>
+                      </div>
+                      <div class="my-2 pb-3">
+                        <p class="text-[#201645] font-medium text-sm">Confirme la fecha de pago probable y el valor a pagar de esta factura</p>
+                        <div class="grid grid-cols-3 items-end gap-5 my-2 pb-3">
+                          <div class="flex flex-col">
+                            <label class="text-[#201645] text-sm pb-2" for="">Fecha de pago probable</label>
+                            <div class="text-[#201645] pl-3 rounded-md h-10 border border-[#E0E1E4] w-full flex items-center">
+                              <input placeholder="dd/mm/aaaa" class="w-full outline-none text-sm placeholder:text-[#201645]" type="text">
+                              <button class="min-h-[30px] min-w-[30px] flex items-center justify-center bg-[#0075C9] text-white rounded-md mr-1">
+                                <i class="iconoir-calendar"></i>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="flex flex-col w-full">
+                            <label class="text-[#201645] text-sm pb-2" for="">Valor a pagar</label>
+                            <input class="text-[#201645] rounded-md h-10 border border-[#E0E1E4] w-full outline-none px-3" type="text">
+                          </div>  
+                          <button class="bg-[#0075C9] rounded-md w-fit h-[30px] text-white font-semibold px-10">Confirmar</button>                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border border-[#201645] p-3 rounded-md flex items-start gap-3 mb-3">
+                    <div class="pt-2">
+                      <label class="text-[#0075C9] font-semibold">
+                        <input type="checkbox" class="accent-[#0075C9]">
+                      </label>
+                    </div>
+                    <div class="w-full pt-2">
+                      <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                          <i class="iconoir-archive text-[#201645]"></i>
+                          <p class="text-[#201645] font-medium">1FO-102345 456456_OPT_F_1FO123213.pdf</p>
+                          <div class="w-[20px] lg:w-[22px] h-[20px] lg:h-[22px] flex items-center justify-center bg-[#7AD978] text-white rounded-full text-md">
+                            <i class="iconoir-check"></i>
+                          </div>
+                        </div>
+                        <button>
+                          <i class="iconoir-trash text-xl text-[#201645]"></i>
+                        </button>
+                      </div>
+                      <div class="grid grid-cols-3 gap-1 my-2">
+                        <p class="text-[#201645] text-sm"><span class="font-medium">CUFE:</span> Ee12313213213213v321h312321h3f1232</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Emisor:</span> 890301960 - Carvajal Pulpa y Papel S.A</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Receptor:</span> 890301960 - Fabriofolder S.A.S.</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Factura:</span> 1FO - 1231241243</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Emitida:</span> 0000 - 00 - 00</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Vence:</span> 0000 - 00 - 00</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Valor Bruto:</span> $150,499.760</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">IVA:</span> $150,499.760</p>
+                        <p class="text-[#201645] text-sm"><span class="font-medium">Valor Total:</span> $150,499.760</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute bottom-0 w-full flex items-center lg:justify-center">
+          <div class="bg-white flex items-center justify-center h-[90px] rounded-t-lg min-w-full px-4 lg:px-0 lg:min-w-[60%] gap-5">
+            <button class="w-full lg:w-[200px] h-[50px] bg-transparent rounded-md text-[#0075C9] font-semibold">ATRAS</button>
+            <button class="w-full lg:w-[200px] h-[50px] bg-[#0075C9] rounded-md text-white font-semibold disabled:bg-[#7BB5E1]">GUARDAR</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
