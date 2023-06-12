@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+  </head>
+  <body>
+    <header class="max-w-[1470px] mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <img class="hidden lg:block" src="./img/logo.svg" alt="">
+        <img class="lg:hidden" src="./img/iso.svg" alt="">
+        <div class="flex items-center gap-4">
+          <button class="w-fit lg:w-[166px] h-[40px] lg:h-[50px] text-sm lg:text-base px-2 border border-[#0075C9] rounded-md text-[#0075C9] font-semibold duration-500 hover:duration-500 hover:bg-[#0075C9] hover:text-white">INICIAR SESIÓN</button>
+          <button class="w-fit lg:w-[166px] h-[40px] lg:h-[50px] text-sm lg:text-base px-2 bg-[#0075C9] rounded-md text-white font-semibold duration-500 hover:duration-500 hover:bg-[#0066b0]">REGÍSTRATE</button>
+        </div>
+      </div>
+    </header>
+    <section class="max-w-[1470px] mx-auto px-4 lg:h-[calc(100vh-110px)]">
+      <div class="grid grid-cols-6 lg:grid-cols-12 gap-6 h-full">
+        <div class="col-span-12 md:col-span-6 lg:col-span-7 h-full">
+          <div class="flex flex-col h-full gap-6">
+            <div class="h-full flex flex-col justify-between w-full bg-[#201645] rounded-2xl p-8">
+              <h1 class="text-white font-semibold text-[30px] md:text-[60px] md:w-10/12 leading-[35px] md:leading-[70px]">Lorem Ipsum is simply dummy text of the printing</h1>
+              <p class="text-white pt-10 lg:pt-0 md:w-6/12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="min-h-[120px] md:min-h-[255px] max-h-[120px] md:max-h-[255px] w-full rounded-2xl">
+              <div class="flex h-full gap-6">
+                <div class="w-full">
+                  <img class="object-cover rounded-2xl w-full h-full" src="./img/banner-landing.png" alt="">
+                </div>
+                <a class="bg-[#0075C9] min-h-[120px] max-h-[120px] min-w-[120px] max-w-[120px] md:min-h-[255px] md:max-h-[255px] md:min-w-[255px] md:max-w-[255px] rounded-2xl flex items-center justify-center duration-500 hover:duration-500 hover:shadow-[0_10px_20px_5px_rgba(0,117,201,0.3)]" href="">
+                  <i class="text-white text-[80px] md:text-[180px] rotate-45 iconoir-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6 lg:col-span-5 h-full">
+          <div class="bg-[#F5F6FA] h-full w-full flex items-center justify-center rounded-2xl">
+            <img src="./img/phone-banner.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[1470px] mx-auto px-4">
+      <div class="flex flex-col lg:flex-row lg:items-center py-20 lg:py-40 justify-between">
+        <div class="pb-5 lg:pb-0">
+          <h2 class="text-[#201645] text-[40px] font-semibold leading-none mb-2">A la fecha</h2>
+          <p class="text-[#201645] w-8/12">Lorem ipsum dolor sit amet, elit. Aenean commodo ligula eget dolor.</p>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-5 lg:gap-10">
+          <div class="bg-[#80BAE4] w-full lg:w-[255px] h-[255px] rounded-2xl flex items-end">
+            <div class="bg-[#0075C9] w-full lg:w-[255px] h-[200px] rounded-2xl flex items-end flex-col justify-end p-6">
+              <p class="text-white text-lg leading-none">Nuestros</p>
+              <p class="text-white text-[50px] lg:text-[60px] font-semibold leading-none py-5">60 K</p>
+              <p class="text-white leading-none">Inversionistas</p>
+            </div>
+          </div>
+          <div class="bg-[#8F8AA2] w-full lg:w-[255px] h-[255px] rounded-2xl flex items-end">
+            <div class="bg-[#201645] w-full lg:w-[255px] h-[230px] rounded-2xl flex items-end flex-col justify-end p-6">
+              <p class="text-white text-lg leading-none">Han ganado</p>
+              <p class="text-white text-[50px] lg:text-[60px] font-semibold leading-none py-5">$160 k</p>
+              <p class="text-white leading-none">COP</p>
+            </div>
+          </div>
+          <div class="bg-[#80BAE4] w-full lg:w-[255px] h-[255px] rounded-2xl flex items-end">
+            <div class="bg-[#0075C9] w-full lg:w-[255px] h-[180px] rounded-2xl flex items-end flex-col justify-end p-6">
+              <p class="text-white text-lg leading-none">Más de</p>
+              <p class="text-white text-[50px] lg:text-[60px] font-semibold leading-none py-5">30 K</p>
+              <p class="text-white leading-none">Facturas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[1470px] mx-auto px-4">
+      <div class="bg-[#201645] rounded-2xl justify-between flex items-end">
+        <div class="ml-20 hidden lg:block">
+          <img class="w-[518px]" src="./img/quehacemos.svg" alt="">
+        </div>
+        <div class="text-white lg:w-6/12 lg:py-14 p-8 lg:px-0">
+          <p class="md:text-lg mb-5">Qué hacemos</p>
+          <h2 class="text-[30px] md:text-[50px] leading-[40px] md:leading-[60px] mb-5">Te conectamos con altas rentabilidades a través de la compra de facturas de empresas colombianas.</h2>
+          <p class="mb-10">Creemos en la inversión como un propósito y un hábito que te impulsa a crecer.</p>
+          <button class="w-[166px] h-[50px] bg-[#0075C9] rounded-md text-white font-semibold duration-500 hover:duration-500 hover:bg-[#0066b0]">REGÍSTRATE</button>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[1470px] mx-auto px-4">
+      <div class="py-20 lg:py-40">
+        <div class="flex justify-between lg:items-end flex-col lg:flex-row">
+          <div class="text-[#201645] mb-10">
+            <p class="text-lg font-semibold">Cómo funciona</p>
+            <h2 class="leading-none text-[40px] font-bold">Conectamos empresas con personas</h2>
+          </div>
+          <div class="bg-[#F5F6FA] h-[70px] w-full md:w-fit flex items-center justify-center p-3 rounded-full mb-10">
+            <div class="bg-[#201645] rounded-full text-white font-semibold text-lg h-[50px] flex items-center justify-center w-full md:min-w-[200px] cursor-pointer">
+              <span>Comprador</span>
+            </div>
+            <div class="bg-transparent rounded-full text-[#201645] font-semibold text-lg h-[50px] flex items-center justify-center w-full md:min-w-[200px] cursor-pointer">
+              <span>Vendedor</span>
+            </div>
+          </div>
+        </div>
+        <divc class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
+          <div class="bg-[#F5F6FA] rounded-2xl p-8 min-h-[300px] lg:min-h-[446px] text-[#201645]">
+            <h3 class="text-[100px] mb-3 font-bold leading-none">01</h3>
+            <p class="text-[30px] mb-4 font-semibold">Regístrate</p>
+            <p class="font-light mb-8 w-10/12">Regístrate en la plataforma, sube los documentos y firma los contratos.</p>
+            <button class="w-[166px] h-[50px] border border-[#0075C9] rounded-md text-[#0075C9] font-semibold duration-500 hover:duration-500 hover:bg-[#0075C9] hover:text-white">REGÍSTRATE</button>
+          </div>
+          <div class="bg-[#F5F6FA] rounded-2xl p-8 min-h-[300px] lg:min-h-[446px] text-[#201645]">
+            <h3 class="text-[100px] mb-3 font-bold leading-none">02</h3>
+            <p class="text-[30px] mb-4 font-semibold">Revisa</p>
+            <p class="font-light mb-8 w-10/12">Revisa nuestro mercado, conoce las empresas, y oferta monto y tasa en las subastas de facturas que quieras invertir.</p>
+          </div>
+          <div class="bg-[#F5F6FA] rounded-2xl p-8 min-h-[300px] lg:min-h-[446px] text-[#201645]">
+            <h3 class="text-[100px] mb-3 font-bold leading-none">03</h3>
+            <p class="text-[30px] mb-4 font-semibold">Espera</p>
+            <p class="font-light mb-8 w-10/12">Espera a que la subasta se cierre o paga de una vez si es una compra inmediata.</p>
+          </div>
+          <div class="bg-[#F5F6FA] rounded-2xl p-8 min-h-[300px] lg:min-h-[446px] text-[#201645]">
+            <h3 class="text-[100px] mb-3 font-bold leading-none">04</h3>
+            <p class="text-[30px] mb-4 font-semibold">Paga</p>
+            <p class="font-light mb-8 w-10/12">Realiza el pago de la oferta que hiciste.</p>
+          </div>
+          <div class="bg-[#F5F6FA] rounded-2xl p-8 min-h-[300px] lg:min-h-[446px] text-[#201645]">
+            <h3 class="text-[100px] mb-3 font-bold leading-none">05</h3>
+            <p class="text-[30px] mb-4 font-semibold">Recibe</p>
+            <p class="font-light mb-8 w-10/12">Espera el plazo de tu inversión y recibe el dinero con la rentabilidad que ganaste.</p>
+          </div>
+          <a href="" class="bg-[#0075C9] rounded-2xl p-8 min-h-[300px] lg:min-h-[446px] flex items-center justify-center duration-500 hover:duration-500 hover:shadow-[0_10px_20px_5px_rgba(0,117,201,0.3)]">
+            <i class="text-white text-[180px] rotate-45 iconoir-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[1470px] mx-auto px-4">
+      <div class="py-20 lg:py-40 flex justify-end">
+        <div class="w-10/12 lg:w-7/12">
+          <div class="relative min-h-[300px]">
+            <div class="absolute">
+              <div class="relative">
+                <img class="absolute left-[-60px] w-[80px] top-[-30px]" src="./img/testimonio.svg" alt="">
+                <p class="text-[#201645] text-[20px] md:text-[26px] lg:text-[30px] z-10 relative">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              </div>
+              <div class="flex items-center gap-5 mt-10">
+                <img src="./img/user.png" alt="">
+                <div> 
+                  <p class="font-semibold text-[#201645]">Juan Pepito</p>
+                  <p class="text-[#8C8C8C] text-sm">Inversionista</p>
+                </div>
+              </div>
+            </div>
+            <div class="absolute hidden">
+              <div class="relative">
+                <img class="absolute left-[-60px] w-[80px] top-[-30px]" src="./img/testimonio.svg" alt="">
+                <p class="text-[#201645] text-[20px] md:text-[26px] lg:text-[30px] z-10 relative">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              </div>
+              <div class="flex items-center gap-5 mt-10">
+                <img src="./img/user.png" alt="">
+                <div> 
+                  <p class="font-semibold text-[#201645]">Juan Pepito</p>
+                  <p class="text-[#8C8C8C] text-sm">Inversionista</p>
+                </div>
+              </div>
+            </div>
+            <div class="absolute hidden">
+              <div class="relative">
+                <img class="absolute left-[-60px] w-[80px] top-[-30px]" src="./img/testimonio.svg" alt="">
+                <p class="text-[#201645] text-[20px] md:text-[26px] lg:text-[30px] z-10 relative">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              </div>
+              <div class="flex items-center gap-5 mt-10">
+                <img src="./img/user.png" alt="">
+                <div> 
+                  <p class="font-semibold text-[#201645]">Juan Pepito</p>
+                  <p class="text-[#8C8C8C] text-sm">Inversionista</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-6 mt-10">
+            <span class="bg-[#201645] h-2 w-20 rounded-full cursor-pointer"></span>
+            <span class="bg-[#F5F6FA] h-2 w-2 rounded-full cursor-pointer"></span>
+            <span class="bg-[#F5F6FA] h-2 w-2 rounded-full cursor-pointer"></span>
+            <span class="bg-[#F5F6FA] h-2 w-2 rounded-full cursor-pointer"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[1470px] mx-auto px-4">
+      <div class="flex justify-center">
+        <div class="w-full lg:w-9/12 bg-[#F5F6FA] rounded-2xl p-8 lg:p-10">
+          <div class="text-[#201645] mb-10">
+            <p class="text-lg font-semibold">Contáctanos</p>
+            <h2 class="text-[40px] font-bold leading-none">¿Tienes dudas? Hablemos</h2>
+          </div>
+          <form action="">
+            <div class="grid grid-cols-6 md:grid-cols-12 gap-6">
+              <div class="col-span-6 md:col-span-6">
+                <div class="flex flex-col w-full">
+                  <label class="text-[#201645] text-sm pb-2" for="">Nombre</label>
+                  <input class="text-[#201645] rounded-md h-10 w-full outline-none px-3" type="text">
+                </div>
+              </div>
+              <div class="col-span-6 md:col-span-6">
+                <div class="flex flex-col w-full">
+                  <label class="text-[#201645] text-sm pb-2" for="">Apellido</label>
+                  <select class="text-[#201645] rounded-md h-10 w-full outline-none px-3" name="" id="">
+                    <option value="">Comprador</option>
+                    <option value="">Vendedor</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-span-6 md:col-span-6">
+                <div class="flex flex-col w-full">
+                  <label class="text-[#201645] text-sm pb-2" for="">Celular</label>
+                  <input class="text-[#201645] rounded-md h-10 w-full outline-none px-3" type="text">
+                </div>
+              </div>
+              <div class="col-span-6 md:col-span-6">
+                <div class="flex flex-col w-full">
+                  <label class="text-[#201645] text-sm pb-2" for="">Correo electrónico</label>
+                  <input class="text-[#201645] rounded-md h-10 w-full outline-none px-3" type="text">
+                </div>
+              </div>
+              <div class="col-span-6 md:col-span-12">
+                <div class="flex flex-col w-full">
+                  <label class="text-[#201645] text-sm pb-2" for="">Correo electrónico</label>
+                  <textarea class="text-[#201645] rounded-md p-3 outline-none" name="" id="" cols="30" rows=""></textarea>
+                </div>
+              </div>
+            </div>
+            <button disabled class="w-[166px] mt-10 h-[50px] bg-[#0075C9] rounded-md text-white font-semibold duration-500 hover:duration-500 hover:bg-[#0066b0] disabled:bg-[#7BB5E1]">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="max-w-[1470px] mx-auto px-4 mt-20 mb-10">
+      <div class="bg-[#201645] text-white p-10 pb-5 rounded-2xl">
+        <img class="w-[210px]" src="./img/logo.svg" alt="">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-10">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <i class="iconoir-smartphone-device text-2xl"></i>
+              <a href="">(601) 4156097</a>
+            </div>
+            <div class="flex items-center gap-2 mb-1">
+              <i class="iconoir-mail text-2xl"></i>
+              <a href="">email.gmail.com</a>
+            </div>
+          </div>
+          <div>
+            <p class="text-lg font-semibold mb-2">Legal</p>
+            <div class="flex items-center gap-2 mb-1">
+              <a class="underline" href="">Políticas de privacidad</a>
+            </div>
+            <div class="flex items-center gap-2 mb-1">
+              <a class="underline" href="">Términos y condiciones</a>
+            </div>
+          </div>
+          <div>
+            <p class="text-lg font-semibold mb-2">Nosotros</p>
+            <div class="flex items-center gap-2 mb-1">
+              <a class="underline" href="">Iniciar sesión</a>
+            </div>
+            <div class="flex items-center gap-2 mb-1">
+              <a class="underline" href="">Regístrate</a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-t-white flex items-center justify-center pt-5 mt-10">
+          <p>© 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
